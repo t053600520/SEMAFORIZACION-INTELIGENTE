@@ -1,0 +1,252 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Sistema de semaforización inteligente para el control de flujo vehicular mediante el Procesamiento Digital de Imágenes\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+should not be used}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Cesar Camargo Lopez}
+	\IEEEauthorblockA{\textit{Dpto. de Ingeniería Mecatrónica} \\
+		\textit{Universidad Nacional de Trujillo}\\
+		Trujillo, Perú \\
+		txxxxxxxxxxx@unitru.edu.pe}
+	\and
+\IEEEauthorblockN{2\textsuperscript{nd} Eduar Cueva Blas}
+\IEEEauthorblockA{\textit{Dpto. de Ingeniería Mecatrónica} \\
+	\textit{Universidad Nacional de Trujillo}\\
+	Trujillo, Perú \\
+	t1023600221@unitru.edu.pe}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Cesar Magán Armas}
+\IEEEauthorblockA{\textit{Dpto. de Ingeniería Mecatrónica} \\
+	\textit{Universidad Nacional de Trujillo}\\
+	Trujillo, Perú \\
+	txxxxxxxxxx@unitru.edu.pe}
+}
+
+\maketitle
+
+\begin{abstract}
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+\section{Introduction}
+El crecimiento en el número de vehículos en las ciudades, junto con una infraestructura vial insuficiente, ha incrementado los problemas de tráfico en muchos paises, especialmente en paises de America del Sur que posee una baja educación vial y sistemas poco eficientes [citar Muñoz Zambrano, 2020].
+
+La semaforización tradicional, basada en tiempos fijos, ha demostrado ser ineficiente en situaciones de tráfico dinámicas y complejas, lo que genera congestión vehicular, retrasos significativos y pérdidas económicas tanto para vehículos como  peatones[citar Smith \& Zhang, 2019].
+
+Otro factor negativo el aumento de emisiones de $CO_2$, las cuales afectan la atmósfera deteriorándola cada vez más, el congestionamiento de transitos aumenta los valores de emisiones en la atmósfera que calienta el planeta, provocando el cambio climático anormal, este tipo de situaciones han elevado el contenido de dióxido de carbono de la atmósfera en un porcentaje elevado en comparación con los últimos 50 años, el aumento de la poblacion y la necesidad de ampliar el transporte cada dia es una problematica que afecta y preocupa cada día más. [cite Ballesteros-Pacheco, 2017]
+
+En respuesta a estas limitaciones, se ha comenzado a explorar el uso de tecnologías avanzadas, como las redes neuronales artificiales (RNA), que permiten optimizar el control del tráfico en tiempo real al aprender y adaptarse a patrones cambiantes.[Smith \& Zhang, 2019]
+
+Investigaciones recientes han demostrado que la integración de redes neuronales con sistemas de sensores, como cámaras y sensores de tráfico, puede mejorar significativamente la eficiencia del control semafórico. Un estudio realizado por Liu et al. [citar](2022) evidenció una reducción del 30\% en los tiempos de espera en intersecciones controladas mediante sistemas inteligentes basados en redes neuronales en comparación con los métodos tradicionales.
+
+\section{Antecedentes}
+
+El enfoque en la implementación de señalización vehicular inteligentes toma fuerza con el avance de la inteligencia artificial y las diversas aplicaciones que se desarrollan para optimizar y facilitar el estudio de esta área. El artículo redactado de Hoang et al. \cite{Hoang2024} desarrolla un sistema de control de señales de tráfico mediante un algoritmo Max Weight y SUMO como herramienta de simulación, con ello determinó una reducción promedio del tiempo de espera de hasta el 32\%, reducción del viaje promedio en un 26\% y una reducción del 22\% en emisiones. Asimismo, SUMO, al ser una plataforma de simulación ampliamente utilizada en modelamiento, se pudo investigar que Esra’a y Taqwa \cite{Esra2024} publicaron un artículo el cual implementan esta plataforma con un sistema de aprendizaje profundo por refuerzo (DRL) para el control adaptativo de las señales de tráfico, propuso un modelo basado en redes de duelo, aprendizaje doble Q y entrenamiento mediante PyTorch para mejorar la eficiencia, con ello demostró una reducción en las emisiones de CO del 56\%, una reducción en el retraso de la intersección del 60\%, una reducción en la longitud máxima de la cola del 52\% y una reducción en el consumo de combustible de más del 60\%. Otro caso es el de Victor et al. \cite{Victor2019} en su articulo estudia el impacto ambiental debido al trafico vehicular mediante simulacion en SUMO para simulación macroscópica y microscópica que permite modelar escenarios con alto nivel de detalle, ademas de usar la base de datos de la Municipalidad de la ciudad, hizo uso de Open Street Map para la construcción del mapa de la zona de estudio, con ello determino que al reducir reducción media en la contaminación por ruido de 1,46\%; CO2 de 13,72\%, CO de 16,09\%; y el número de vehículos en 11,75; mientras que, con la macrosimulación la situación no varía.
+
+En el trabajo de grado de Manzo y Arzate \cite{Manzo2019} estudiaron un sistema de semáforos inteligentes que controle el cambio de luces en los
+semáforos utilizando algoritmos de visión artificial y procesamiento de imágenes donde empleó una arquitectura donde a partir de la captura de
+imágenes se ejecutan procesos en tiempo real mediante algoritmos de visión artificial, haciedo uso de Pycharm Jetbrains y OPENCV para la integración de sensores, la comunicación con el hardware y el reconocimiento de patrones, con ello contribuyó a disminuir la congestión especialmente en el caso de intersecciones que presentan una diferencia contrastante en los niveles de afluencia vehicular. 
+
+En la implementación de un sistema de semaforización inteligente de Monterrey y Sosa \cite{Monterrey2020}, se llevó a cabo la selección de componentes de software y hardware basados en criterios de fiabilidad, costo y velocidad de respuesta. Para el procesamiento de imágenes, se evaluaron plataformas de inteligencia artificial como OpenCV, Amazon Rekognition, Microsoft Computer Vision API, Google Cloud Vision API, entre otras. Amazon Rekognition fue seleccionada debido a su alta fiabilidad, detectando el 100\% de los vehículos en las pruebas (11 de 11), frente a IBM Watson con un 54.54\% (6 de 11) y Google Cloud y Microsoft con un 36.36\% (4 de 11). Además, AWS destacó por ofrecer 5000 imágenes gratuitas al mes y un costo adicional de \$1.30 USD por cada 1000 imágenes adicionales, junto con un tiempo promedio de respuesta de 2.219 segundos, siendo el más rápido entre las opciones analizadas. En cuanto al sistema embebido, se optó por la Raspberry Pi 3 modelo B, ya que cumple con los requisitos de conexión a internet, almacenamiento de hasta 256GB por MicroSD y compatibilidad con cámaras, todo a un costo de COP \$310,000. Para la captura de imágenes, se seleccionó la cámara ELP 1MP USB debido a su resolución óptima de 720p y su capacidad para operar en exteriores, con un costo de COP \$160,000. Asimismo, el sistema incluye el sensor de luz TSL2561, con un rango de medición de 0.1 a 40,000 lux y un consumo de energía de 15 mA, junto con el sensor de humedad DHT22, que ofrece un rango de humedad de 0 a 100\% y un rango de temperatura de -40 a 80°C, siendo crítico para la detección de condiciones climáticas adversas.
+
+Otro aporte es el de Álvarez y Olaya \cite{Alvarez2021} utilizando la red neuronal YOLOv3 para la detección en tiempo real de vehículos y peatones. El sistema fue entrenado con un dataset de 2,100 imágenes extraídas de 20 videos simulados con diversas condiciones de luz. Cada video fue procesado a una tasa de 20 cuadros por minuto. La simulación del tráfico se llevó a cabo en un entorno creado en Unity 3D, que incluyó 3 carreras y 4 calles, generando 8 intersecciones semaforizadas, de las cuales una fue utilizada para pruebas. La red YOLOv3 se entrenó durante 100 épocas utilizando PyTorch, logrando los niveles de precisión requeridos. El proceso de entrenamiento fue optimizado en Google Colaboratory, aprovechando una GPU Nvidia Tesla K80 con 12.7 GB de memoria y 360 GB de almacenamiento, lo que permitió una aceleración significativa.
+
+En el artículo investigado por Jacobo \cite{Jacobo2015} se orienta en la aplicación de la teoría de evaluación de HCM 2000 y el programa de simulación de tráfico Syncho 7 y Sim Traffic que se encuentran basados en detección de bordes, Segmentación de imágenes, clasificación de Objetos y CNNs; con los cuales se obtiene los niveles de servicio asi como el tipo de vehiculo y tiempos de semáforo. De acuerdo a los patrones obtenidos del comportamiento vial, se obtuvo un ahorro de combustible anual de 181800 lt/hr en el sector de Nuevo Laredo, una disminución de 5617gr/hr de CO que representa un 37\% de reducción.
+\section{Prepare Your Paper Before Styling}
+Before you begin to format your paper, first write and save the content as a 
+separate text file. Complete all content and organizational editing before 
+formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
+proofreading, spelling and grammar.
+
+Keep your text and graphic files separate until after the text has been 
+formatted and styled. Do not number text heads---{\LaTeX} will do that 
+for you.
+
+\subsection{Abbreviations and Acronyms}\label{AA}
+Define abbreviations and acronyms the first time they are used in the text, 
+even after they have been defined in the abstract. Abbreviations such as 
+IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
+abbreviations in the title or heads unless they are unavoidable.
+
+\subsection{Units}
+\begin{itemize}
+\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
+\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
+\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
+\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
+\end{itemize}
+
+\subsection{Equations}
+Number equations consecutively. To make your 
+equations more compact, you may use the solidus (~/~), the exp function, or 
+appropriate exponents. Italicize Roman symbols for quantities and variables, 
+but not Greek symbols. Use a long dash rather than a hyphen for a minus 
+sign. Punctuate equations with commas or periods when they are part of a 
+sentence, as in:
+\begin{equation}
+a+b=\gamma\label{eq}
+\end{equation}
+
+Be sure that the 
+symbols in your equation have been defined before or immediately following 
+the equation. Use ``\eqref{eq}'', not ``Eq.~\eqref{eq}'' or ``equation \eqref{eq}'', except at 
+the beginning of a sentence: ``Equation \eqref{eq} is . . .''
+
+\subsection{\LaTeX-Specific Advice}
+
+Please use ``soft'' (e.g., \verb|\eqref{Eq}|) cross references instead
+of ``hard'' references (e.g., \verb|(1)|). That will make it possible
+to combine sections, add equations, or change the order of figures or
+citations without having to go through the file line by line.
+
+Please don't use the \verb|{eqnarray}| equation environment. Use
+\verb|{align}| or \verb|{IEEEeqnarray}| instead. The \verb|{eqnarray}|
+environment leaves unsightly spaces around relation symbols.
+
+Please note that the \verb|{subequations}| environment in {\LaTeX}
+will increment the main equation counter even when there are no
+equation numbers displayed. If you forget that, you might write an
+article in which the equation numbers skip from (17) to (20), causing
+the copy editors to wonder if you've discovered a new method of
+counting.
+
+{\BibTeX} does not work by magic. It doesn't get the bibliographic
+data from thin air but from .bib files. If you use {\BibTeX} to produce a
+bibliography you must send the .bib files. 
+
+{\LaTeX} can't read your mind. If you assign the same label to a
+subsubsection and a table, you might find that Table I has been cross
+referenced as Table IV-B3. 
+
+{\LaTeX} does not have precognitive abilities. If you put a
+\verb|\label| command before the command that updates the counter it's
+supposed to be using, the label will pick up the last counter to be
+cross referenced instead. In particular, a \verb|\label| command
+should not go before the caption of a figure or a table.
+
+Do not use \verb|\nonumber| inside the \verb|{array}| environment. It
+will not stop equation numbers inside \verb|{array}| (there won't be
+any anyway) and it might stop a wanted equation number in the
+surrounding equation.
+
+\subsection{Some Common Mistakes}\label{SCM}
+\begin{itemize}
+\item The word ``data'' is plural, not singular.
+\item The subscript for the permeability of vacuum $\mu_{0}$, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ``o''.
+\item In American English, commas, semicolons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
+\item A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
+\item Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
+\item In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
+\item Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
+\item Do not confuse ``imply'' and ``infer''.
+\item The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
+\item There is no period after the ``et'' in the Latin abbreviation ``et al.''.
+\item The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
+\end{itemize}
+An excellent style manual for science
+
+\subsection{Authors and Affiliations}
+\textbf{The class file is designed for, but not limited to, six authors.} A 
+minimum of one author is required for all conference articles. Author names 
+should be listed starting from left to right and then moving down to the 
+next line. This is the author sequence that will be used in future citations 
+and by indexing services. Names should not be listed in columns nor group by 
+affiliation. Please keep your affiliations as succinct as possible (for 
+example, do not differentiate among departments of the same organization).
+
+\subsection{Identify the Headings}
+Headings, or heads, are organizational devices that guide the reader through 
+your paper. There are two types: component heads and text heads.
+
+Component heads identify the different components of your paper and are not 
+topically subordinate to each other. Examples include Acknowledgments and 
+References and, for these, the correct style to use is ``Heading 5''. Use 
+``figure caption'' for your Figure captions, and ``table head'' for your 
+table title. Run-in heads, such as ``Abstract'', will require you to apply a 
+style (in this case, italic) in addition to the style provided by the drop 
+down menu to differentiate the head from the text.
+
+Text heads organize the topics on a relational, hierarchical basis. For 
+example, the paper title is the primary text head because all subsequent 
+material relates and elaborates on this one topic. If there are two or more 
+sub-topics, the next level head (uppercase Roman numerals) should be used 
+and, conversely, if there are not at least two sub-topics, then no subheads 
+should be introduced.
+
+\subsection{Figures and Tables}
+\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
+bottom of columns. Avoid placing them in the middle of columns. Large 
+figures and tables may span across both columns. Figure captions should be 
+below the figures; table heads should appear above the tables. Insert 
+figures and tables after they are cited in the text. Use the abbreviation 
+``Fig.~\ref{fig}'', even at the beginning of a sentence.
+
+\begin{table}[htbp]
+\caption{Table Type Styles}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+\cline{2-4} 
+\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
+\hline
+copy& More table copy$^{\mathrm{a}}$& &  \\
+\hline
+\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+\end{tabular}
+\label{tab1}
+\end{center}
+\end{table}
+
+\begin{figure}[htbp]
+{\includegraphics{fig1.png}}
+\caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+
+Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
+rather than symbols or abbreviations when writing Figure axis labels to 
+avoid confusing the reader. As an example, write the quantity 
+``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
+units in the label, present them within parentheses. Do not label axes only 
+with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
+\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
+quantities and units. For example, write ``Temperature (K)'', not 
+``Temperature/K''.
+
+\section*{Acknowledgment}
+
+The preferred spelling of the word ``acknowledgment'' in America is without 
+an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
+G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
+acknowledgments in the unnumbered footnote on the first page.
+
+\section{References}
+
+\bibliographystyle{ieeetr}
+\bibliography{referencias.bib}
+
+\vspace{12pt}
+\color{red}
+IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+
+\end{document}
