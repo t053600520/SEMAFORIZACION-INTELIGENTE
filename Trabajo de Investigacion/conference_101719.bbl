@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Hoang2024}
 T.~A. Hoang, N.~Walton, and H.~L. Vu, ``Optimal decentralized signal control
@@ -16,9 +16,18 @@ V.~Samaniego-Calle, M.~S. Viñán-Ludeña, W.~Jaramillo-Sangurima,
   tráfico vehicular: un caso de estudio comparativo para reducir atascos y
   emisiones contaminantes,'' 2019.
 
+\bibitem{Tang2024}
+D.~Tang and Y.~Duan, ``Traffic signal control optimization based on neural
+  network in the framework of model predictive control,'' {\em Actuators},
+  vol.~13, 7 2024.
+
 \bibitem{Manzo2019}
 F.~M. Cruz and L.~A. Hernandez, ``"sistema de semáforos inteligentes para el
   control de tráfico vehicular",'' 2019.
+
+\bibitem{Segarra2022}
+J.~F.~S. López and J.~C.~C. Torres, ``Vehicle classification and counting
+  through image analysis,'' vol.~6, pp.~313--334, 2022.
 
 \bibitem{Monterrey2020}
 M.~C.~A. Mauricio and S.~R.~C. Andrés, ``"diseÑo de un sistema de
@@ -28,5 +37,66 @@ M.~C.~A. Mauricio and S.~R.~C. Andrés, ``"diseÑo de un sistema de
 \bibitem{Alvarez2021}
 J.~A. Álvarez Sánchez and J.~D.~O. Quiñones, ``"implementación de redes
   neuronales en sistema de semaforización inteligente",'' 2021.
+
+\bibitem{Eduardo2024}
+E.~R.~W. Leon and M.~A.~C. Ygnacio, ``Una revisión sistemática de literatura
+  sobre implementaciones de sistemas de control de tráfico,'' {\em
+  Interfases}, pp.~157--178, 7 2024.
+
+\bibitem{Jacobo2015}
+A.~Jacobo, ``Sistema de semáforos inteligentes utilizado sensores de
+  presencia,'' {\em Artículo Revista Aplicaciones de la Ingeniería Junio},
+  vol.~2, pp.~147--152, 2015.
+
+\bibitem{Mateus2014}
+S.~P. Mateus, N.~González, and J.~W. Branch, ``Aplicación de redes neuronales
+  artificiales en entornos virtuales inteligentes,'' {\em Informacion
+  Tecnologica}, vol.~25, pp.~103--112, 2014.
+
+\bibitem{Felipe2022}
+F.~G.~G. Avendaño, ``Semáforos inteligentes con redes neuronales
+  convolucionales,'' 2022.
+
+\bibitem{Srinivasan2006}
+D.~Srinivasan, M.~C. Choy, and R.~L. Cheu, ``Neural networks for real-time
+  traffic signal control,'' {\em IEEE Transactions on Intelligent
+  Transportation Systems}, vol.~7, pp.~261--272, 9 2006.
+
+\bibitem{Michel2013}
+M.~B.~D. Oliveira and A.~D.~A. Neto, ``Optimization of traffic lights timing
+  based on multiple neural networks,'' pp.~825--832, 2013.
+
+\bibitem{Lungu2024}
+M.~A. Lungu, ``Smart urban mobility: The role of ai in alleviating traffic
+  congestion,'' {\em Proceedings of the International Conference on Business
+  Excellence}, vol.~18, pp.~1441--1452, 6 2024.
+
+\bibitem{Dario2018}
+H.~D.~O. Unda, ``"implementación de un sistema de automatización para el
+  control de semáforos inteligentes",'' 2018.
+
+\bibitem{Peralta2017}
+J.~A.~P. Fuentes and J.~C.~M. Zavala, ``Semáforo inteligente para regular el
+  transito vehicular basado en open hardware,'' 2017.
+
+\bibitem{Bances2014}
+M.~Bances and M.~Ramos, ``Semáforos inteligentes para la regulación del
+  tráfico vehicular rev,'' {\em Rev. Ingeniería: Ciencia, Tecnología e
+  Innovación}, vol.~1, p.~1, 2014.
+
+\bibitem{Jose2016}
+J.~M. Celis-Peñaranda, C.~D. Escobar-Amado, S.~B. Sepúlveda-Mora, S.~A.
+  Castro-Casadiego, B.~Medina-Delgado, and J.~J. Ramírez-Mateus, ``Control
+  adaptativo para optimizar una intersección semafórica basado en un sistema
+  embebido,'' {\em Ingeniería y Ciencia}, vol.~12, pp.~169--193, 11 2016.
+
+\bibitem{Arquimedes2019}
+A.~J.~M. Zambrano, ``Propuesta de implantación dl sistema electrónico de
+  semaforización inteligente en la av. luis gonzales que conforma la zona del
+  damelo de chiclayo,'' 2019.
+
+\bibitem{Sergio2021}
+S.~L.~M. Rodríguez, ``Optimización de un sistema de semáforos mediante
+  simulación empleando un vehículo flotante,'' 2021.
 
 \end{thebibliography}

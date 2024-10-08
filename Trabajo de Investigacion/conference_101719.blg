@@ -11,46 +11,58 @@ Warning--entry type for "Monterrey2020" isn't style-file defined
 --line 80 of file referencias.bib
 Warning--entry type for "Alvarez2021" isn't style-file defined
 --line 85 of file referencias.bib
+Warning--entry type for "Dario2018" isn't style-file defined
+--line 195 of file referencias.bib
+Warning--entry type for "Peralta2017" isn't style-file defined
+--line 200 of file referencias.bib
+Warning--entry type for "Arquimedes2019" isn't style-file defined
+--line 206 of file referencias.bib
+Warning--entry type for "Felipe2022" isn't style-file defined
+--line 212 of file referencias.bib
+Warning--entry type for "Sergio2021" isn't style-file defined
+--line 230 of file referencias.bib
 Warning--empty journal in Victor2019
-You've used 6 entries,
+Warning--empty journal in Segarra2022
+Warning--empty journal in Michel2013
+You've used 21 entries,
             1876 wiz_defined-function locations,
-            512 strings with 4738 characters,
-and the built_in function-call counts, 941 in all, are:
-= -- 70
-> -- 60
+            613 strings with 7705 characters,
+and the built_in function-call counts, 4497 in all, are:
+= -- 422
+> -- 174
 < -- 0
-+ -- 22
-- -- 16
-* -- 65
-:= -- 159
-add.period$ -- 6
-call.type$ -- 6
-change.case$ -- 6
++ -- 67
+- -- 46
+* -- 290
+:= -- 644
+add.period$ -- 21
+call.type$ -- 21
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 37
-empty$ -- 102
-format.name$ -- 16
-if$ -- 216
+cite$ -- 24
+duplicate$ -- 210
+empty$ -- 461
+format.name$ -- 46
+if$ -- 1114
 int.to.chr$ -- 0
-int.to.str$ -- 6
-missing$ -- 3
-newline$ -- 21
-num.names$ -- 6
-pop$ -- 31
+int.to.str$ -- 21
+missing$ -- 13
+newline$ -- 66
+num.names$ -- 21
+pop$ -- 89
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 171
 stack$ -- 0
-substring$ -- 0
-swap$ -- 2
+substring$ -- 234
+swap$ -- 78
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 6
-width$ -- 7
-write$ -- 48
-(There were 4 warnings)
+warning$ -- 3
+while$ -- 38
+width$ -- 23
+write$ -- 178
+(There were 11 warnings)

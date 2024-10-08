@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.8)  1 OCT 2024 07:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.5.8)  7 OCT 2024 22:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -316,37 +316,36 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-2.
-
-(C:\Users\EDUAR\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1{C:/Users/EDUAR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Progra
-m Files/MiKTeX/fonts/enc/dvips/base/8r.enc}
+ [1{C:/Users/EDUAR/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program
+ Files/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-08.
+Underfull \hbox (badness 2334) in paragraph at lines 73--74
+[][]\OT1/ptm/m/n/10 Alvarez y Olaya [8] im-ple-men-taron la red neu-ronal
+ []
 
-(C:\Users\EDUAR\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+[2]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+29.
+ (C:\Users\EDUAR\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [2]
-<fig1.png, id=17, 82.1469pt x 71.5473pt>
+) [3]
+<fig1.png, id=20, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 213.
+Package pdftex.def Info: fig1.png  used on input line 234.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 2
-24.
+45.
 
 (C:\Users\EDUAR\AppData\Roaming\MiKTeX\tex/latex/psnfss\omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 245.
 
-(conference_101719.bbl [3 <./fig1.png (PNG copy)>])
+(conference_101719.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -358,22 +357,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4
-
-] (conference_101719.aux)
+[4 <./fig1.png (PNG copy)>] (conference_101719.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-04-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4333 strings out of 474370
- 67807 string characters out of 5750351
- 1946754 words of memory out of 5000000
- 26674 multiletter control sequences out of 15000+600000
- 610624 words of font info for 139 fonts, out of 8000000 for 9000
+ 4322 strings out of 474370
+ 67586 string characters out of 5750351
+ 1951754 words of memory out of 5000000
+ 26667 multiletter control sequences out of 15000+600000
+ 610310 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,11n,65p,1947b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,65p,1065b,304s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/
@@ -383,7 +380,7 @@ fb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program File
 s/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/
 urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
 ><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (4 pages, 150562 bytes).
+Output written on conference_101719.pdf (4 pages, 157538 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
